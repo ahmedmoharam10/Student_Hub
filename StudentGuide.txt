@@ -1,0 +1,44 @@
+StudentGuide
+│
+├── Faculty
+│   ├── FID (PK)
+│   └── F_Name
+│
+├── Students
+│   ├── SID (PK)
+│   ├── S_Name
+│   ├── S_FacultyID (FK to Faculty)
+│   ├── S_Major
+│   ├── S_Password
+│   └── Study_Year
+│
+├── Office_Hours
+│   ├── Prof_ID (FK to Professors)
+│   ├── Tassistant_ID (FK to Teaching_Assistants)
+│   ├── Floor_Num
+│   ├── Room_Num
+│   ├── Days
+│   └── Times
+│
+├── Professors
+│   ├── PID (PK)
+│   ├── P_Name
+│   ├── P_FacultyID (FK to Faculty)
+│   └── P_Major
+│
+├── Teaching_Assistants
+│   ├── TAID (PK)
+│   ├── TA_Name
+│   ├── TA_FacultyID (FK to Faculty)
+│   └── TA_Major
+│
+├── Modules
+│   ├── Module_Code (PK)
+│   ├── Module_Name
+│   └── M_FacultyID (FK to Faculty)
+│
+└── MSPT
+    ├── M_Code (FK to Modules)
+    ├── Stud_ID (FK to Students)
+    ├── Prof_ID (FK to Professors)
+    └── Teac_ID (FK to Teaching_Assistants)

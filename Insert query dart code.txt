@@ -1,0 +1,5 @@
+Insert student:
+	String sql1 = "insert into studentguide.students (SID, S_Name, S_FacultyID, S_Major, S_Password, Study_Year) values (221985, 'Test 		Values', 1, 'Computer', '1234', 2)";
+
+	conn.query(sql1);
+
